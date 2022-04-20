@@ -1,11 +1,17 @@
-import './App.css';
+import React from 'react'
+import { BrowserRouter as Router, Route } from 'react-router-dom'
+import Navbar from './Components/Navbar'
 
 function App() {
   return (
-    <div className="bg-purple-500">
-     
-    </div>
-  );
+    <Router>
+      <div className='flex flex-col justify-between h-screen'>
+        <Navbar />
+
+        <main>content</main>
+      </div>
+    </Router>
+  )
 }
 
-export default App;
+export default App
